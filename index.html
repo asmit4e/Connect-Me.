@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Social Media Contact Icons</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+      /* UPDATED: Added an attractive background with a transparent dot pattern */
+      background-color: #e0f7fa; /* Fallback color */
+      background-image:
+        /* Transparent dots pattern */
+        url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000' fill-opacity='0.04'%3E%3Ccircle cx='10' cy='10' r='2'/%3E%3C/g%3E%3C/svg%3E"),
+        /* A soft, professional gradient */
+        linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      text-align: center;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .social-icons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 30px;
+      max-width: 600px;
+      width: 100%;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.8); /* Made card slightly transparent */
+      backdrop-filter: blur(10px); /* Frosted glass effect */
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .icon-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    
+    .icon-box:hover {
+        color: #000;
+        transform: translateY(-5px);
+    }
+    
+    .icon-box span {
+        margin-top: 15px;
+    }
+
+    .icon {
+      font-size: 40px;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .icon-box:hover .icon {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
+
+    /* Individual platform colors */
+    .linkedin    { background: #0A66C2; }
+    .twitter     { background: #000000; } /* Updated for X */
+    .whatsapp    { background: #25D366; }
+    .telegram    { background: #0088cc; }
+    .facebook    { background: #1877F2; }
+    .instagram   { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+  </style>
+</head>
+<body>
+
+  <div class="social-icons">
+
+    <a href="https://www.linkedin.com/in/asmit-singh-795b97287" target="_blank" class="icon-box">
+      <div class="icon linkedin"><i class="fab fa-linkedin-in"></i></div>
+      <span>LinkedIn</span>
+    </a>
+
+    <a href="https://x.com/sasmit959" target="_blank" class="icon-box">
+      <div class="icon twitter"><i class="fab fa-xing"></i></div>
+      <span>X (Twitter)</span>
+    </a>
+
+    <a href="https://wa.me/918004413591" target="_blank" class="icon-box">
+      <div class="icon whatsapp"><i class="fab fa-whatsapp"></i></div>
+      <span>WhatsApp</span>
+    </a>
+
+    <a href="https://t.me/asmit_4e" target="_blank" class="icon-box">
+      <div class="icon telegram"><i class="fab fa-telegram"></i></div>
+      <span>Telegram</span>
+    </a>
+
+    <a href="https://www.facebook.com/profile.php?id=61553400024153" target="_blank" class="icon-box">
+      <div class="icon facebook"><i class="fab fa-facebook-f"></i></div>
+      <span>Facebook</span>
+    </a>
+
+    <a href="https://www.instagram.com/__jay_4e" target="_blank" class="icon-box">
+      <div class="icon instagram"><i class="fab fa-instagram"></i></div>
+      <span>Instagram</span>
+    </a>
+
+  </div>
+
+</body>
+</html>
